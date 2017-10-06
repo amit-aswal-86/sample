@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+	<property name="DEV_HOME" value="E:\\temp\\log"/>
+
+	<appender name="FILE_AUDIT" class="ch.qos.logback.core.ConsoleAppender">
+		<file>${DEV_HOME}/kafka.log</file>
+		
+		<encoder class="ch.qos.logback.classic.encoder.PatternLayoutEncoder">
+			<Pattern>
+				%d{yyyy-MM-dd HH:mm:ss} - %msg%n
+			</Pattern>
+		</encoder>
+	</appender>
+
+	<root level="error">
+		<appender-ref ref="FILE_AUDIT" />
+	</root>
+	
+	<root level="debug">
+		<appender-ref ref="FILE_AUDIT" />
+	</root>
+	
+	<root level="info">
+		<appender-ref ref="FILE_AUDIT" />
+	</root>
+
+</configuration>
