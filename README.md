@@ -22,3 +22,14 @@ For accidentely remove file from project Please follow stackoverflow accepted an
 https://stackoverflow.com/questions/2125710/how-to-revert-a-git-rm-r
 
 Use below video about git to get more idea about git command line :- https://www.youtube.com/watch?v=HVsySz-h9r4
+
+# to publish app in bluemix
+To publish war into ibm bluemix run the following command (cloud foundry must be install & login details must be applied) :- cf push smartmeter.war -m 1024M -p smartmeter.war -b https://github.com/cloudfoundry/java-buildpack.git
+cf push <app_name> -m <memory_size> -p <war_file_name> -b existing buildpack
+Note : if app_name not exits it will create. To get more details follow below links :- 
+https://github.com/cloudfoundry/cli 
+http://docs.cloudfoundry.org/cf-cli/ 
+https://github.com/cloudfoundry/java-buildpack
+
+Use below video about git to get more idea about git command line :- 
+https://www.youtube.com/watch?v=HVsySz-h9r4
